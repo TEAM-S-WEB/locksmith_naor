@@ -1,0 +1,108 @@
+.aboutBriefContainer {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px var(--box_shadow_global);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.imageContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.aboutImage {
+    
+  flex: 1 1 0;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    border: 2px solid #e1e4ea;
+    background: #fff;
+    transition: box-shadow 0.2s;
+    width: 100%;
+    height: auto;
+    min-width: 120px;
+    max-width: 220px;
+}
+
+.aboutTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color_title);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.aboutSubtitle {
+    font-size: 1.3rem;
+    color: var(--color_subtitle);
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.aboutContent {
+    font-size: 1.1rem;
+    color: var(--color_global);
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.aboutImage {
+    display: block;
+    max-width: 220px;
+    margin: 0 auto 32px auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+}
+
+.aboutList {
+    list-style: disc inside;
+    margin: 0 0 32px 0;
+    padding: 0;
+    color: #2b6cb0;
+}
+
+.aboutListItem {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.learnMoreButton {
+       color: var(--color_link_global);
+   margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.learnMoreButton:hover {
+     background: var(--color_link_hover_global);
+    /* color: #224171; */
+    box-shadow: 0 2px 8px var(--box_shadow_global);
+}
+
+@media (max-width: 600px) {
+    .aboutPageContainer {
+        padding: 16px 6px;
+    }
+    .aboutTitle {
+        font-size: 2rem;
+    }
+    .aboutSubtitle {
+        font-size: 1rem;
+    }
+    .learnMoreButton{
+        margin-top: 10px;
+    }
+}

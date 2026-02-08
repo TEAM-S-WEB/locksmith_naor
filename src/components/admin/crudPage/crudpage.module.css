@@ -1,0 +1,92 @@
+.crudPage {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 32px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.crudPage h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+.crudPage label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #2d3748;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.crudPage input[type="text"],
+.crudPage textarea {
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f9fafb;
+    margin-top: 6px;
+    resize: vertical;
+}
+
+.crudPage textarea {
+    min-height: 80px;
+}
+
+.crudPage input[type="checkbox"] {
+    margin-top: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.crudPage button[type="submit"],
+.crudPage button[type="button"] {
+    background: #3182ce;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 12px;
+    margin-right: 8px;
+}
+
+.crudPage button[type="submit"]:hover,
+.crudPage button[type="button"]:hover {
+    background: #2563eb;
+}
+
+.paragraph {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.paragraph textarea {
+    flex: 1;
+}
+
+.paragraph button {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    background: #e53e3e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.paragraph button:hover {
+    background: #c53030;
+}

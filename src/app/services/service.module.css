@@ -1,0 +1,61 @@
+.callingContainer {
+    background: var(--background_global);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cubesWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.cube {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    min-width: 240px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.cube:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.14);
+}
+
+.phoneIcon {
+    color: #2563eb;
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.cubeTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.cubeDescription {
+    font-size: 1rem;
+    color: #64748b;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .cubesWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+}

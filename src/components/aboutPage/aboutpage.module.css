@@ -1,0 +1,63 @@
+.aboutPageContainer {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: var(--background_container);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.aboutTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.aboutSubtitle {
+    font-size: 1.3rem;
+    color: #4a5568;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.aboutContent {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.aboutImage {
+    display: block;
+    max-width: 220px;
+    margin: 0 auto 32px auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+}
+
+.aboutList {
+    list-style: disc inside;
+    margin: 0 0 32px 0;
+    padding: 0;
+    color: #2b6cb0;
+}
+
+.aboutListItem {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .aboutPageContainer {
+        padding: 25px 25px;
+    }
+    .aboutTitle {
+        font-size: 2rem;
+    }
+    .aboutSubtitle {
+        font-size: 1rem;
+    }
+}

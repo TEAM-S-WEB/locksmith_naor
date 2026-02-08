@@ -1,0 +1,89 @@
+/* contactpage.module.css */
+
+.container {
+    max-width: 480px;
+    margin: 56px auto;
+    padding: 36px 28px;
+    background: var(--background_container);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(30, 64, 175, 0.08);
+    border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.heading {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #233876;
+    margin-bottom: 6px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.description {
+    color: #4b5563;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.label {
+    font-size: 0.98rem;
+    color: #1e293b;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 1rem;
+    transition: border-color 0.18s;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: #233876;
+    background: #f0f4ff;
+}
+
+.textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.button {
+    background: #233876;
+    color: #fff;
+    padding: 11px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, box-shadow 0.18s;
+    box-shadow: 0 1px 4px rgba(35, 56, 118, 0.07);
+}
+
+.button:hover {
+    background: #1e293b;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 25px;
+    }
+}

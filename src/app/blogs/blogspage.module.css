@@ -1,0 +1,76 @@
+/* blogspage.module.css */
+
+/* עיצוב קלאסי לדף בלוגים */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    background: var(--background_container);
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+    direction: rtl;
+}
+
+.header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3a2c1a;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #e0cfa9;
+    padding-bottom: 1rem;
+}
+
+.blogList {
+     
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.blogCard {
+    background: var(--background_container);
+    border: 1px solid #e0cfa9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(58, 44, 26, 0.07);
+    transition: box-shadow 0.2s;
+}
+
+.blogCard:hover {
+    box-shadow: 0 4px 16px rgba(58, 44, 26, 0.13);
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #3a2c1a;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.meta {
+    font-size: 0.95rem;
+    color: #a68b5b;
+    margin-bottom: 1rem;
+}
+
+.summary {
+    font-size: 1.1rem;
+    color: #4d3b22;
+    line-height: 1.7;
+}
+
+.readMore {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #a68b5b;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.readMore:hover {
+    color: #3a2c1a;
+    text-decoration: none;
+}

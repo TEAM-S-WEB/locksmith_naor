@@ -1,0 +1,108 @@
+.navbar {
+    background: var(--background_navbar);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 2px 8px var(--box_shadow_global)
+}
+
+.navbarLogo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.navLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navLink {
+     color: var(--color_link_global);
+   
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.navLink:hover,
+.navLink:focus {
+    background: var(--color_link_hover_global);
+    /* color: #224171; */
+    box-shadow: 0 2px 8px rgba(52, 84, 209, 0.08);
+}
+
+.navLink.active {
+    /* color: #a9e0ea; */
+    background: var(--color_link_active_global);
+    font-weight: 600;
+}
+
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 1001;
+    
+}
+
+.hamburgerBar {
+    height: 4px;
+    width: 100%;
+    /* background: #e4e9f7;
+     */
+     background-color: var(--hamburgerBar_background);
+    border-radius: 2px;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .navLinks {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background: var(--hamburgerBar_background_links);
+        
+        flex-direction: column;
+        width: 220px;
+        gap: 0;
+        box-shadow: 0 2px 8px rgba(22, 36, 71, 0.08);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        padding: 2rem 0 2rem 0;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    .navLinks.open {
+        transform: translateX(0);
+        
+    }
+    .navLink {
+        margin-top: 35px;
+        padding: 1.2rem 2rem;
+        border-radius: 0;
+        font-size: 1.1rem;
+         color: var(--color_link_global);
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+.showNavLinks {
+    transform: translateX(0);
+}

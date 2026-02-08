@@ -1,0 +1,143 @@
+.homePage {
+  font-family: Arial, sans-serif;
+  background: var(--background_global);
+  color: var(--color_global);
+  min-height: 100vh;
+  padding: 0 0 40px 0;
+}
+
+.header {
+  background: var(--foreground_global);
+  color: var(--color_white);
+  padding: 48px 0 24px 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.heroSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.heroTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background_hero_title);
+  color: var(--color_white);
+  padding: 24px 40px;
+  border-radius: 12px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 12px var(--box_shadow_global);
+  text-align: center;
+  z-index: 2;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+  /* border-radius: 12px; */
+}
+@media (max-width: 600px) {
+  .heroTitle {
+    font-size: 1.3rem;
+    padding: 14px 18px;
+    border-radius: 8px;
+  }
+}
+.section {
+  background: #fff;
+  margin: 32px auto;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--box_shadow_global);
+  padding: 32px 24px;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color_section_title);
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.updatesList {
+  list-style: disc inside;
+  color: #444;
+  margin: 0;
+  padding: 0 0 0 18px;
+}
+
+.timesLocation {
+  line-height: 1.7;
+  color: #333;
+}
+
+.dailyHalacha {
+  background: #f4ede4;
+  border-left: 6px solid #c9a86b;
+  margin: 32px auto 25px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(44,62,80,0.06);
+  padding: 28px 22px;
+}
+
+.dailyHalachaTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #a67c2d;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+}
+
+.dailyHalachaDate {
+  font-size: 1rem;
+  color: #6b5b2c;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.dailyHalachaSentences {
+  color: #3a2d13;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 18px;
+  list-style: decimal inside;
+}
+
+.HalachaSentence {
+  margin-bottom: 8px;
+}
+
+.broadcast {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.broadcastLink {
+  display: inline-block;
+
+  margin-top: 12px;
+  padding: 10px 22px;
+  background: #2d3e50;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.broadcastLink:hover {
+  background: var(--foreground_hover_global);
+}
+

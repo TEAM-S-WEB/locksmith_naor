@@ -1,0 +1,30 @@
+.bannerLink {
+  display: flex;
+  align-items: center;
+    font-weight: bold;
+      background: #233876;
+    color: #fff;
+    padding: 11px 10px;
+    border: none;
+    /* border-radius: 6px; */
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, box-shadow 0.18s;
+    box-shadow: 0 1px 4px rgba(35, 56, 118, 0.07);
+}
+
+
+.bannerLink:hover {
+    background: #1e293b;
+}
+
+.link {
+    padding-left: 25px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.arrow {
+  margin-left: 0.5rem;
+}

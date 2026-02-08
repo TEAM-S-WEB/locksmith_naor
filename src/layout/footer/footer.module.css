@@ -1,0 +1,35 @@
+.footer {
+    background: var(--footer_background);
+    color: var(--footer_color);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footerLink {
+    color: var(--footer_link_color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.footerLink:hover,
+.footerLink:focus {
+    background: var(--footer_link_hover_background);
+    color: var(--footer_link_hover_color);
+}
+
+.footerCopyright {
+    font-size: 0.9rem;
+    color: var(--footer_copyright_color);
+}

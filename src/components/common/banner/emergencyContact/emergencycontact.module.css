@@ -1,0 +1,165 @@
+.container {
+    background: #f7f8fa;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    box-shadow: none;
+    max-width: full;
+    margin: 2rem auto;
+    border: none;
+    text-align: left;
+}
+
+/* Icon styling */
+.icon {
+    color: #ef4444;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    display: block;
+    text-align: center;
+}
+
+.header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* Form horizontal layout */
+.form {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+    max-width: 980px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+}
+
+/* Group inputs horizontally */
+.contactInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-end;
+    flex: 1;
+}
+
+/* Each label/input pair vertical */
+.contactInfo > label,
+.contactInfo > input {
+    display: block;
+}
+
+.label {
+    font-size: 1rem;
+    color: #1e293b;
+    font-weight: 500;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 1rem;
+    background: #fff;
+    margin-bottom: 0;
+    transition: border-color 0.2s;
+    min-width: 180px;
+    max-width: 260px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* Button centered and spaced */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.button {
+    background: #ef4444;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0;
+    align-self: center;
+    min-width: 180px;
+}
+
+.button:hover {
+    background: #1e40af;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .form {
+        flex-direction: column;
+        gap: 18px;
+        max-width: 98vw;
+        align-items: stretch;
+        padding: 18px 8px;
+    }
+    .contactInfo {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    .input {
+        max-width: 100%;
+        min-width: 0;
+    }
+    .button {
+        width: 100%;
+        align-self: center;
+    }
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 24px 25px;
+        max-width: 98vw;
+    }
+    .form {
+        max-width: 98vw;
+    }
+    .input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+.photoCollage {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background: #f5f6fa;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    max-width: full;
+    margin: 0 auto;
+}
+
+.photoRow {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.photo {
+    flex: 1 1 0;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    border: 2px solid #e1e4ea;
+    background: #fff;
+    transition: box-shadow 0.2s;
+    width: 100%;
+    height: auto;
+    min-width: 120px;
+    max-width: 220px;
+}
+/* 
+.photo:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+    border-color: #0078d4;
+} */
+
+@media (max-width: 700px) {
+    .photoCollage {
+        padding: 16px;
+        border-radius: 8px;
+    }
+    .photoRow {
+        gap: 12px;
+    }
+    .photo {
+        min-width: 80px;
+        max-width: 120px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photoCollage {
+        padding: 8px;
+    }
+    .photoRow {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .photo {
+        min-width: 60px;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+}
