@@ -1,6 +1,6 @@
 export const BASE_DATA = {
-  siteName: "Locksmith YSL ",
-  altSiteName: "YSL - 24/7 Locksmith Services",
+  siteName: "Locksmith and Doors",
+  altSiteName: "Locksmith and Doors- 24/7 Locksmith Services",
   URL: "https://www.locksmithysl.com",
   email: "info@locksmithysl.com",
   phone: "+1 (732) 631-4663",
@@ -16,7 +16,7 @@ export const BASE_DATA = {
   page_contact: {
     title: "Contact Us",
     description:
-      "Get in touch with Locksmith YSL for all your locksmith needs. We are here to help you 24/7.",
+      "Get in touch with Locksmith and Doorsfor all your locksmith needs. We are here to help you 24/7.",
     keywords: [
       "locksmith contact",
       "locksmith services",
@@ -44,13 +44,13 @@ export const BASE_DATA = {
       "locksmith chat support",
       "locksmith callback request",
     ],
-    alt: "Contact Us | Locksmith YSL",
+    alt: "Contact Us | Locksmith and Doors",
     img: "https://i.ibb.co/Kx97sCw9/pexels-mikhail-nilov-8101456.jpg",
   },
   page_about: {
     title: "About Us",
     description:
-      "Learn more about Locksmith YSL, our mission, and our team of expert locksmiths.",
+      "Learn more about Locksmith and Doors, our mission, and our team of expert locksmiths.",
     keywords: [
       "about locksmith",
       "locksmith company",
@@ -63,13 +63,13 @@ export const BASE_DATA = {
       "locksmith services",
       "locksmith solutions",
     ],
-    alt: "About Us | Locksmith YSL",
+    alt: "About Us | Locksmith and Doors",
     img: "https://i.ibb.co/HD0WcfJ9/A-high-resolution-digital-photograph-showcases-loc-resized.webp",
   },
   page_privacy: {
     title: "Privacy Policy",
     description:
-      "Understand how Locksmith YSL collects, uses, and protects your personal information.",
+      "Understand how Locksmith and Doorscollects, uses, and protects your personal information.",
     keywords: [
       "privacy policy",
       "data protection",
@@ -82,7 +82,7 @@ export const BASE_DATA = {
       "privacy rights",
       "GDPR compliance",
     ],
-    alt: "Privacy Policy | Locksmith YSL",
+    alt: "Privacy Policy | Locksmith and Doors",
     img: "https://i.ibb.co/qL9kkhfz/pexels-kindelmedia-7688336.jpg",
   },
   page_blogs: {
@@ -98,7 +98,7 @@ export const BASE_DATA = {
       "DIY lock repair",
       "locksmith industry news",
     ],
-    alt: "Blog | Locksmith YSL",
+    alt: "Blog | Locksmith and Doors",
     img: "https://i.ibb.co/BHtC7bp2/pexels-life-of-pix-8092.jpg",
   },
   page_services: {

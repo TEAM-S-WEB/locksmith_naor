@@ -54,15 +54,16 @@
     height: 32px;
     cursor: pointer;
     z-index: 1001;
+        
     
 }
 
 .hamburgerBar {
     height: 4px;
     width: 100%;
-    /* background: #e4e9f7;
-     */
-     background-color: var(--hamburgerBar_background);
+    /* background: black; */
+    
+     background-color: #D89829;
     border-radius: 2px;
     margin: 4px 0;
     transition: 0.3s;
