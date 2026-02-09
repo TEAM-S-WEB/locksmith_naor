@@ -29,6 +29,11 @@ export default function Home() {
         local_b="Brooklyn"
         local_c="Queens"
       />
+       <LocationServices
+        local_a="Bronks"
+        local_b="jersey city"
+      
+      />
       <GoodResponse />
       <Callme />
       {/* <Calling

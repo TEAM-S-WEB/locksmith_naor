@@ -1,6 +1,6 @@
 .callMeContainer {
   width: 100%;
-  min-height: 52px;
+  min-height: 82px;
 
   background: linear-gradient(
     90deg,
@@ -135,7 +135,7 @@
   .callMeContainer {
     top: auto;
     bottom: 0;
-    padding: 10px 12px;
+    padding: 20px 22px;
     min-height: 56px;
     font-size: 0.95rem;
     border-bottom: none;
