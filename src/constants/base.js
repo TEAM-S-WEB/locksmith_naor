@@ -1,9 +1,9 @@
 export const BASE_DATA = {
   siteName: "Locksmith and Doors",
   altSiteName: "Locksmith and Doors- 24/7 Locksmith Services",
-  URL: "https://www.locksmithysl.com",
-  email: "info@locksmithysl.com",
-  phone: "+1 (732) 631-4663",
+  URL: "https://www.locksmithanddoors.com",
+  email: "info@locksmithanddoors.com",
+  phone: "+1 (347) 6807735",
   address: "123 Main Street, New York, NY 10001",
   city: "New York",
   defaultLanguage: "en-US",
