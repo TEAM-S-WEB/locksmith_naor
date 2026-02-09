@@ -6,20 +6,20 @@ import { BASE_DATA } from "@/constants/base.js";
 
 
 
-async function getAllBlogs() {
-  try {
-    const blogs = await blogService.getAllBlogs();
-    return blogs.data || MOKE_DATA.BLOGS;
-  } catch (error) {
-    console.error('Failed to fetch blogs:', error);
-    return [];
-  }
-}
+// async function getAllBlogs() {
+//   try {
+//     const blogs = await blogService.getAllBlogs();
+//     return blogs.data || MOKE_DATA.BLOGS;
+//   } catch (error) {
+//     console.error('Failed to fetch blogs:', error);
+//     return [];
+//   }
+// }
 
-function absUrl(path = "/") {
-  const base = BASE_DATA.URL?.replace(/\/$/, "") || "";
-  return `${base}${path.startsWith("/") ? path : `/${path}`}`;
-}
+// function absUrl(path = "/") {
+//   const base = BASE_DATA.URL?.replace(/\/$/, "") || "";
+//   return `${base}${path.startsWith("/") ? path : `/${path}`}`;
+// }
 
 // הפונקציה הדינמית
 export async function generateMetadata() {
@@ -77,13 +77,13 @@ export async function generateMetadata() {
 }
 
 const page = async () => {
-  const blogs = await getAllBlogs();
+  // const blogs = await getAllBlogs();
 
   
   return (
     <div className={styles.container}>
       <h1 className={styles.header}>Blogs</h1>
-      <ul className={styles.blogList}>
+      {/* <ul className={styles.blogList}>
         {blogs?.map(blog => (
           <li key={blog._id} className={styles.blogCard}>
             <h2 className={styles.title}>{blog.title}</h2>
@@ -95,7 +95,7 @@ const page = async () => {
             <a href={`/blogs/${blog._id}`} className={styles.readMore}>read more</a>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   )
 }
