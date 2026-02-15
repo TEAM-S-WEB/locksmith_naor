@@ -1,0 +1,134 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  min-height: 620px;
+  width: 100%;
+  background: #000;
+}
+
+.left {
+  background-image: url("/images/locksmith-form.png"); /* תחליפי לתמונה שלך */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* פס לבן כמו בתמונה */
+.left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90px;
+  height: 100%;
+  background: #fff;
+}
+
+.right {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  width: min(760px, 100%);
+  padding: 48px 28px 56px;
+}
+
+.title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+  margin: 0 0 26px;
+}
+
+.form {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 26px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.labelRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.req {
+  color: #ff3b30;
+  font-weight: 800;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #111;
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-size: 16px;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.button {
+  margin-top: 22px;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+/* רספונסיביות */
+@media (max-width: 900px) {
+  .wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    min-height: 280px;
+  }
+
+  .left::after {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

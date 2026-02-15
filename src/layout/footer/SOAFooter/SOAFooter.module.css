@@ -1,0 +1,174 @@
+.footer {
+  background: #000000;
+  color: #eaeaea;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 46px 20px 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.2fr;
+  gap: 42px;
+  align-items: start;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #d40000; /* red underline like screenshot */
+  letter-spacing: 0.5px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  display: inline-block;
+  padding: 6px 0;
+  color: #eaeaea;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.contactTop {
+  margin-top: 2px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contactLine {
+  margin: 6px 0;
+}
+
+.contactLabel {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.contactValue {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+.contactValue:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.iconBlock {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.iconItem {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  color: #f0f0f0;
+  opacity: 0.95;
+}
+
+.iconText {
+  text-align: left;
+}
+
+.iconTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.iconSub {
+  font-size: 14px;
+  color: #bdbdbd;
+  margin-top: 4px;
+}
+
+.bottom {
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 14px;
+}
+
+.bottomLink {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+.bottomLink:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Side vertical CTA like screenshot */
+.sideCta {
+  position: absolute;
+  left: 0;
+  top: 120px;
+  background: #d40000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 14px 12px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.sideCta:hover {
+  filter: brightness(1.05);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .sideCta {
+    display: none;
+  }
+}

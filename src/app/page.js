@@ -13,6 +13,8 @@ import CompanyLocation from "@/components/homePage/companyLocation/CompanyLocati
 import LocationServices from "@/components/homePage/locationServices/LocationServices";
 import Callme from "@/components/common/callme/Callme";
 import GoodResponse from "@/components/homePage/Goodresponse/GoodResponse";
+import BrandsSection from "@/components/homePage/brands/BrandsSection";
+import ScheduleAppointment from "@/components/homePage/scheduleAppointment/ScheduleAppointment";
 
 export default function Home() {
   useEffect(() => {}, []);
@@ -20,7 +22,15 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <div className={styles.heroSection}>
-        <h1 className={styles.heroTitle}>Welcome to {BASE_DATA.siteName}</h1>
+        <div className={styles.heroTitle}>
+        {/* <h1 className={styles.heroTitle}>Welcome to {BASE_DATA.siteName}</h1> */}
+        <p className={styles.callMeTitle}>Welcome to <span className={styles.locksmithSpan}>locksmith & doors </span>services in NYC!</p>
+        {/* <h2 className={styles.callMeTitle}>PROFESSIONAL LOCKSMITH SERVICES</h2> */}
+
+        <a href="tel:+1234567890" className={styles.callButton}>
+          +1 234 567 890
+        </a>
+      </div>
 
         <Image src={img} alt="Locksmith Service" className={styles.heroImage} />
       </div>
@@ -44,6 +54,7 @@ export default function Home() {
       <AboutBrief />
 
       <EmergencyContact />
+      <BrandsSection /> 
       <PhotoCollage
         a={PHOTO_COLLAGE_HOME.a}
         b={PHOTO_COLLAGE_HOME.b}
@@ -52,6 +63,7 @@ export default function Home() {
         f={PHOTO_COLLAGE_HOME.f}
         g={PHOTO_COLLAGE_HOME.g}
       />
+        <ScheduleAppointment img={PHOTO_COLLAGE_HOME.d}/>
       <CompanyLocation />
     </div>
   );

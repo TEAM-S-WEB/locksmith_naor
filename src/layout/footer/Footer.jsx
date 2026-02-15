@@ -6,6 +6,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa";
 import { BASE_DATA } from "@/constants/base";
 
+
 const Footer = () => {
   return (
     <div className={styles.footer}>

@@ -27,7 +27,7 @@
   left: 0;
   z-index: 1000;
 
-  border-top: 1px solid rgba(200, 164, 77, 0.18);
+  border-top: 1px solid rgba(200, 87, 77, 0.18);
   box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.35);
 
   animation: slideUp 0.45s cubic-bezier(0.22, 1, 0.36, 1);
@@ -52,14 +52,14 @@
   color: #F7F4ED;
   text-shadow:
     0 2px 14px rgba(0,0,0,0.45),
-    0 0 18px rgba(200, 164, 77, 0.35);
+    0 0 18px rgba(200, 87, 77, 0.35);
 }
 
 
 /* “Emergency” בגולד יוקרתי במקום צהוב חזק */
 .emergencySpan {
   font-weight: 700;
-  color: #C8A44D;
+  color: #d32f2f;
   text-shadow: 0 1px 10px rgba(200, 164, 77, 0.25);
 }
 
@@ -81,7 +81,7 @@
 
 /* כפתור פרימיום: גולד + עומק */
 .callButton {
-  border: 1px solid rgba(200, 164, 77, 0.55);
+  border: 1px solid rgba(200, 77, 77, 0.55);
   border-radius: 999px;
 
   padding: 10px 18px;
@@ -92,7 +92,7 @@
   letter-spacing: 0.2px;
 
   color: #0B0B0B;
-  background: linear-gradient(180deg, #E0C06A 0%, #C8A44D 55%, #B58F35 100%);
+  background: linear-gradient(180deg, #d84f4f 0%, #b72222 55%, #b91919 100%);
   box-shadow:
     0 10px 22px rgba(0,0,0,0.35),
     inset 0 1px 0 rgba(255,255,255,0.35);

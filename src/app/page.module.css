@@ -1,72 +1,123 @@
 .homePage {
-  font-family: Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   background: var(--background_global);
   color: var(--color_global);
   min-height: 100vh;
   padding: 0 0 40px 0;
 }
 
+/* Header – קטן ונעים + רספונסיבי */
 .header {
   background: var(--foreground_global);
   color: var(--color_white);
-  padding: 48px 0 24px 0;
+  padding: 36px 16px 18px 16px;
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-.heroSection {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-bottom: 32px; */
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  line-height: 1.2;
 }
 
+.heroSection {
+  position: relative;
+  min-height: 420px;
+}
+
+
+
+.callMeTitle {
+  font-size: clamp(0.9rem, 2.8vw, 1rem);
+  font-weight: 300;
+  color: var(--color_white);
+  margin: 10px 12px;
+  letter-spacing: 0.3px;
+}
+
+.locksmithSpan {
+  font-size: clamp(1.05rem, 3.4vw, 1.25rem);
+  font-weight: 600;
+  color: #f5f5f5;
+  margin: 0 8px;
+}
+
+/* Hero title – קטן יותר + רספונסיבי + לא "ענק" במובייל */
 .heroTitle {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: min(70%, 900px);
+  text-align: center;
   background: var(--background_hero_title);
   color: var(--color_white);
-  padding: 24px 40px;
-  border-radius: 12px;
-  font-size: 2.2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  box-shadow: 0 2px 12px var(--box_shadow_global);
-  text-align: center;
+  padding: 32px 60px;
+  border-radius: 16px;
+  font-size: clamp(1.4rem, 3vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  line-height: 1.25;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.35);
   z-index: 2;
 }
 
+
 .heroImage {
-  max-width: 100%;
-  height: auto;
-  /* border-radius: 12px; */
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
 }
-@media (max-width: 600px) {
-  .heroTitle {
-    font-size: 1.3rem;
-    padding: 14px 18px;
-    border-radius: 8px;
-  }
+
+.callButton {
+  border: 1px solid rgba(200, 77, 77, 0.55);
+  border-radius: 999px;
+  padding: 9px 16px;
+
+  font-size: clamp(0.92rem, 3vw, 1rem);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+
+  color: var(--color_white);
+  background: linear-gradient(180deg, #d84f4f 0%, #b72222 55%, #b91919 100%);
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
 }
+
+.callButton:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.38);
+}
+
+.callButton:active {
+  transform: translateY(0);
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.35),
+    inset 0 2px 10px rgba(0, 0, 0, 0.18);
+}
+
+/* Sections – טיפוגרפיה יותר עדינה + מובייל friendly */
 .section {
-  background: #fff;
-  margin: 32px auto;
+  background: var(--background_section, #fff);
+  margin: 28px auto;
   max-width: 700px;
   border-radius: 12px;
   box-shadow: 0 2px 8px var(--box_shadow_global);
-  padding: 32px 24px;
+  padding: 26px 20px;
 }
 
 .sectionTitle {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: clamp(1.05rem, 3.2vw, 1.25rem);
+  font-weight: 700;
   color: var(--color_section_title);
-  margin-bottom: 16px;
-  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+  line-height: 1.25;
 }
 
 .updatesList {
@@ -74,33 +125,36 @@
   color: #444;
   margin: 0;
   padding: 0 0 0 18px;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .timesLocation {
-  line-height: 1.7;
+  line-height: 1.65;
   color: #333;
+  font-size: 0.95rem;
 }
 
 .dailyHalacha {
   background: #f4ede4;
   border-left: 6px solid #c9a86b;
-  margin: 32px auto 25px auto;
+  margin: 28px auto 22px auto;
   max-width: 700px;
   border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(44,62,80,0.06);
-  padding: 28px 22px;
+  box-shadow: 0 1px 6px rgba(44, 62, 80, 0.06);
+  padding: 22px 18px;
 }
 
 .dailyHalachaTitle {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: clamp(1rem, 3.2vw, 1.15rem);
+  font-weight: 800;
   color: #a67c2d;
-  margin-bottom: 14px;
-  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
 }
 
 .dailyHalachaDate {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #6b5b2c;
   margin-bottom: 10px;
   font-style: italic;
@@ -108,36 +162,61 @@
 
 .dailyHalachaSentences {
   color: #3a2d13;
-  font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.7;
   margin: 0;
   padding-left: 18px;
   list-style: decimal inside;
 }
 
-.HalachaSentence {
+/* ✅ תיקון שם class – כדי שלא ישבר ב-CSS Modules */
+.halachaSentence {
   margin-bottom: 8px;
 }
 
 .broadcast {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .broadcastLink {
   display: inline-block;
-
   margin-top: 12px;
-  padding: 10px 22px;
+  padding: 10px 20px;
   background: #2d3e50;
   color: #fff;
-  border-radius: 6px;
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: background 0.2s;
 }
 
 .broadcastLink:hover {
   background: var(--foreground_hover_global);
 }
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .section {
+    margin: 20px 12px;
+    padding: 22px 16px;
+    border-radius: 10px;
+  }
+
+  .dailyHalacha {
+    margin: 20px 12px;
+    padding: 20px 16px;
+  }
+
+  .callButton {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .broadcastLink {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
 

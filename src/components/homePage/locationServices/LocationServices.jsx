@@ -7,9 +7,9 @@ const LocationServices = ({local_a, local_b, local_c}) => {
     <div className={styles.locationServices}>
         {/* <p>Services in :</p> */}
       <div className={styles.local_a}>{local_a}</div>
-      <VscDebugBreakpointLog size={20} color='#d69929ff'/>
+      <VscDebugBreakpointLog size={20} color='#d32f2f;'/>
       <div className={styles.local_b}>{local_b}</div>
-        <VscDebugBreakpointLog size={20} color='#d69929ff'/>
+        <VscDebugBreakpointLog size={20} color='#d32f2f'/>
       <div className={styles.local_c}>{local_c}</div>
     </div>
   )

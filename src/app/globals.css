@@ -8,20 +8,22 @@
   --box_shadow_global: rgba(44,62,80,0.07);
   --color_global: #222;
   --color_link_global: #fafafa;
-  --color_link_hover_global: #d69929ae;
+  --color_link_hover_global: #d32f2f;
+  --btn_background_global: #d32f2f;
+  --hover_btn_background_global: #b91919;
   --color_link_active_global: red;
   --color_white: #ffffff;
 
-  --color_title: #2d3748;
-  --color_subtitle: #4a5568;
-  --color_section_title: #2d3e50;
+  --color_title: #0f151c;
+  --color_subtitle: #0e1014;
+  --color_section_title: #0f151c;
   
   --background_navbar: #000000;
   --hamburgerBar_color: #e4e9f7;
-  --hamburgerBar_background: #D89829;
+  --hamburgerBar_background: #d32f2f;
   --hamburgerBar_background_links: #000000;
 
-  --footer_background: #0a1b31;
+  --footer_background: #000000;
   --footer_color: #f5f7fa;
   --footer_link_color: #b3c7e6;
   --footer_link_hover_background: rgba(255,255,255,0.08);

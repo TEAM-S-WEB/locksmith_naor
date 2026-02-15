@@ -1,6 +1,7 @@
 import ContactPage from "@/components/contactPage/ContactPage";
 import React from "react";
-import Bannerlink from "@/components/common/banner/link/Bannerlink";
+
+import Callme from "@/components/common/callme/Callme";
 import { BASE_DATA } from "@/constants/base";
 
 function absUrl(path = "/") {
@@ -66,7 +67,8 @@ export async function generateMetadata() {
 const page = () => {
   return (
     <div>
-      <Bannerlink text="" description="Call us now" link="tel:+17326314663" />
+      <Callme />
+      
       <ContactPage />
     </div>
   );

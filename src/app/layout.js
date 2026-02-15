@@ -4,6 +4,7 @@ import Footer from "@/layout/footer/Footer";
 import { BASE_DATA } from "@/constants/base";
 import "./globals.css";
 import Script from "next/script";
+import SOAFooter from "@/layout/footer/SOAFooter/SOAFooter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -136,7 +137,8 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
+        <SOAFooter />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-V499MBRKDQ"
           strategy="afterInteractive"

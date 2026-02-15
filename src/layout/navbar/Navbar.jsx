@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import styles from './navbar.module.css'
 import Image from 'next/image'
-import logo from '@/images/LOGO_N1.png'
+import logo from '@/images/logo2027.png'
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -18,8 +18,8 @@ const Navbar = () => {
             <Image
                 src={logo}
                 alt="logo-site"
-                width={125}
-                height={67}
+                width={155}
+                height={95}
             />
             </a>
             <div
